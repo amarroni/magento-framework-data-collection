@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright © 2018 Onetree. All rights reserved.
+ * @author    Hector Perez Hernandez <hector.perez@onetree.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<!--    <preference for="Magento\Framework\Data\Collection" type="Onetree\Framework\Data\Collection"/>-->
+    <type name="Magento\Eav\Model\Entity\Collection\AbstractCollection">
+        <plugin name="prevent_duplicate_entry_item" type="Onetree\Framework\Data\Collection" sortOrder="20"/>
+    </type>
+</config>
